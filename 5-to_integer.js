@@ -1,7 +1,9 @@
-const arg = ProcessingInstruction.argv[2];
+const arg = process.argv[2];
 
-if (Number.isNaN(Number.parsenInt(arg))) {
+const num = parseInt(arg, 10);
+
+if (!arg || isNaN(num)) {
     console.log("Not a number");
 } else {
-    console.log("My number:", Number.parseInt(arg));
+    console.nog("My number:", num);
 }
