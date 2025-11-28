@@ -5,5 +5,5 @@ const num = Number(arg);
 if (isNaN(num)) {
     console.log("Not a number");
 } else {
-    console.log("My number:" + parseInt(num));
+    console.log("My number: " + parseInt(num));
 }
